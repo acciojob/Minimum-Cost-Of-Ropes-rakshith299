@@ -21,10 +21,6 @@ function getTwoSum(arr){
 
 function calculateMinCost() {
 
-	Cypress.on('uncaught:exception', (err, runnable) =>{
-		return false;
-	})
-
 	document.getElementById("form").addEventListener("submit", function(event){
         event.preventDefault();
     })
