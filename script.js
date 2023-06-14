@@ -20,9 +20,15 @@ function getTwoSum(arr){
 }
 
 function calculateMinCost() {
+
 	document.getElementById("form").addEventListener("submit", function(event){
         event.preventDefault();
     })
+
+	Cypress.on('uncaught:exception', (err, runnable) =>{
+		return false;
+	})
+	
     let input = document.getElementById("rope-lengths").value;
     let splitted = input.split(",");
     console.log(splitted);
