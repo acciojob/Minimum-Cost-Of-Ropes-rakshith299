@@ -30,9 +30,11 @@ function calculateMinCost() {
         splitted[x] = Number(splitted[x]);
     }
 
-    splitted.sort();
+    splitted.sort(function(a,b){
+        return a - b;
+    });
 
-    console.log(splitted);
+    console.log(splitted + ` ----> splitted`);
 
     if(splitted.length == 1){
         minCost = splitted[0];
@@ -68,7 +70,7 @@ function calculateMinCost() {
 
     let result = document.getElementById("result");
     result.textContent = minCost;
-    
+
 
     
   }  
