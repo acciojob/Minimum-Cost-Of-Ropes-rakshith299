@@ -20,6 +20,7 @@ function getTwoSum(arr){
 }
 
 function calculateMinCost() {
+	let form = document.getElementById("form");
     let input = document.getElementById("rope-lengths").value;
     let splitted = input.split(",");
     console.log(splitted);
