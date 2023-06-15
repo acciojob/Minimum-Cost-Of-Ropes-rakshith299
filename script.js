@@ -20,9 +20,7 @@ function calculateMinCost() {
         
     }
 
-    document.getElementById("form").addEventListener("submit", function(event){
-        event.preventDefault();
-    })
+	let button = document.getElementById("form");
 
     let input = document.getElementById("rope-lengths").value;
     let splitted = input.split(",");
