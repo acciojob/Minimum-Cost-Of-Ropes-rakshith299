@@ -1,32 +1,29 @@
 
-
-function getTwoSum(arr){
-
-    let compressArr = [];
-
-    if(arr.length >= 2){
-        let sum = arr[0] + arr[1];
-        compressArr.push(sum);
-
-        for(let i = 2; i < arr.length; i++){
-            compressArr.push(arr[i]);
-        }
-    }
-
-    console.log(compressArr+ ` compressedArr`);
-
-    return compressArr;
-    
-}
-
 function calculateMinCost() {
 
-	document.getElementById("form").addEventListener("submit", function(event){
+    function getTwoSum(arr){
+
+        let compressArr = [];
+    
+        if(arr.length >= 2){
+            let sum = arr[0] + arr[1];
+            compressArr.push(sum);
+    
+            for(let i = 2; i < arr.length; i++){
+                compressArr.push(arr[i]);
+            }
+        }
+    
+        console.log(compressArr+ ` compressedArr`);
+    
+        return compressArr;
+        
+    }
+
+    document.getElementById("form").addEventListener("submit", function(event){
         event.preventDefault();
     })
 
-	
-	
     let input = document.getElementById("rope-lengths").value;
     let splitted = input.split(",");
     console.log(splitted);
